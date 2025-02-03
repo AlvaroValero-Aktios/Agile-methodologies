@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 5px;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #464b5f;
+            font-size: 1.3em;
+        }
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+
+        }
+        .contenido {
+            width: 700px;
+            margin-left: 50px;
+            margin-right: 50px;
+            float: left;
+        }
+        .menuLateral {
+            width: 200px;
+            height: fit-content;
+            background-color: white;
+            margin-left: 0px;
+            float: left;
+            position: fixed;
+            padding: 20px;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+        }
+        .buttonsTitle {
+            margin-top: 0px;
+            margin-bottom: 20px;
+            padding: 5px;
+            text-align: center;
+            font-size: 1.3em;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            padding: 5px;
+            text-align: center;
+            border: 3px solid #2c334d;
+            border-radius: 20px;
+            background-color: #898ea4;
+            text-decoration: none;
+            color: black;
+        }
+        .buttons:hover {
+            background-color: #2c334d;
+            transform: scale(1.1);
+            color: white;
+        }
+        aside {
+            height: 180vh;
+            width: 35px;
+            background-color: #1e2335;
+            border-radius: 15px;
+            float: left;
+        }
+        .introTitle {
+            background-color: white;
+            padding: 15px;
+            border-radius: 40px;
+            text-align: center;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+        }
+        .intro {
+            background-color: white;
+            padding: 25px;
+            border-radius: 40px;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+            text-align: justify;
+        }
+        .principlesListTitle {
+            background-color: white;
+            padding: 15px;
+            border-radius: 40px;
+            text-align: center;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+        }
+        .principlesList {
+            background-color: white;
+            padding: 25px;
+            border-radius: 40px;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+            text-align: justify;
+        }
+        .elementsListTitle {
+            background-color: white;
+            padding: 15px;
+            border-radius: 40px;
+            text-align: center;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+        }
+        .elementsList {
+            background-color: white;
+            padding: 25px;
+            border-radius: 40px;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+            text-align: justify;
+        }
+        .advantagesKanbanTitle {
+            background-color: white;
+            padding: 15px;
+            border-radius: 40px;
+            text-align: center;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+        }
+        .advantagesKanban {
+            background-color: white;
+            padding: 25px;
+            border-radius: 40px;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <aside class="menuLateral">
+        <div class="buttonsTitle"><strong>Metodologías</strong></div>
+        <a href="index.html" class="buttons">Home</a>
+        <a href="indexKanban.html" class="buttons">Kanban</a>
+        <a href="indexScrum.html" class="buttons">Scrum</a>
+        <a href="indexXP.html" class="buttons">Extreme Programming</a>
+    </aside>
+    <div class="main">
+        <aside class="barralateral"></aside>
+        <div class="contenido">
+            <div class="introTitle">
+                <h1>Kanban</h1>
+            </div>
+            <br>
+            <div class="intro">
+                <h2>¿Qué es Kanban?</h2>
+                <p>Kanban es una metodología ágil enfocada en la <strong>gestión visual del flujo de trabajo</strong> mediante tableros. Se centra en la mejora continua y en la reducción de los tiempos de entrega, permitiendo una ejecución más eficiente de las tareas.</p>
+            </div>
+            <br>
+            <div class="principlesListTitle">
+            <h2>Principios de Kanban</h2>
+            </div>
+            <br>
+            <div class="principlesList">
+            <ul>
+                <li><strong>Visualización del trabajo:</strong> Se usan tableros con tarjetas para mostrar el estado de las tareas.</li>
+                <li><strong>Límites del trabajo en progreso (WIP):</strong> Se establecen límites para evitar la sobrecarga del equipo.</li>
+                <li><strong>Gestión del flujo:</strong> Se optimiza la entrega continua reduciendo tiempos de espera.</li>
+                <li><strong>Mejora continua:</strong> Se analizan y ajustan procesos constantemente.</li>
+            </ul>
+            </div>
+            <br>
+            <div class="elementsListTitle">
+            <h2>Elementos del tablero Kanban</h2>
+            </div>
+            <br>
+            <div class="elementsList">
+            <ul>
+                <li><strong>To Do:</strong> Tareas pendientes por realizar.</li>
+                <li><strong>In Progress:</strong> Tareas en desarrollo.</li>
+                <li><strong>Done:</strong> Tareas completadas.</li>
+            </ul>
+            </div>
+            <br>
+            <div class="advantagesKanbanTitle">
+            <h2>Ventajas de Kanban</h2>
+            </div>
+            <br>
+            <div class="advantagesKanban">
+            <ul>
+                <li>Fácil implementación en cualquier tipo de proyecto.</li>
+                <li>Permite una gestión eficiente del flujo de trabajo.</li>
+                <li>Reduce tiempos de espera y mejora la productividad.</li>
+            </ul>
+            </div>
+        </div>
+        <aside class="barralateral"></aside>
+    </div>
+</body>
+</html>

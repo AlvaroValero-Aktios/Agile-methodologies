@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extreme Programming</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 5px;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #464b5f;
+            font-size: 1.3em;
+        }
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+
+        }
+        .contenido {
+            width: 700px;
+            margin-left: 50px;
+            margin-right: 50px;
+            float: left;
+        }
+        .menuLateral {
+            width: 200px;
+            height: fit-content;
+            background-color: white;
+            margin-left: 0px;
+            float: left;
+            position: fixed;
+            padding: 20px;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+        }
+        .buttonsTitle {
+            margin-top: 0px;
+            margin-bottom: 20px;
+            padding: 5px;
+            text-align: center;
+            font-size: 1.3em;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            padding: 5px;
+            text-align: center;
+            border: 3px solid #2c334d;
+            border-radius: 20px;
+            background-color: #898ea4;
+            text-decoration: none;
+            color: black;
+        }
+        .buttons:hover {
+            background-color: #2c334d;
+            transform: scale(1.1);
+            color: white;
+        }
+        aside {
+            height: 180vh;
+            width: 35px;
+            background-color: #1e2335;
+            border-radius: 15px;
+            float: left;
+        }
+        .introTitle {
+            background-color: white;
+            padding: 15px;
+            border-radius: 40px;
+            text-align: center;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+        }
+        .intro {
+            background-color: white;
+            padding: 25px;
+            border-radius: 40px;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+            text-align: justify;
+        }
+        .principlesListTitle {
+            background-color: white;
+            padding: 15px;
+            border-radius: 40px;
+            text-align: center;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+        }
+        .principlesList {
+            background-color: white;
+            padding: 25px;
+            border-radius: 40px;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+            text-align: justify;
+        }
+        .elementsListTitle {
+            background-color: white;
+            padding: 15px;
+            border-radius: 40px;
+            text-align: center;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+        }
+        .elementsList {
+            background-color: white;
+            padding: 25px;
+            border-radius: 40px;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+            text-align: justify;
+        }
+        .advantagesXPTitle {
+            background-color: white;
+            padding: 15px;
+            border-radius: 40px;
+            text-align: center;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+        }
+        .advantagesXP {
+            background-color: white;
+            padding: 25px;
+            border-radius: 40px;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <aside class="menuLateral">
+        <div class="buttonsTitle"><strong>Metodologías</strong></div>
+        <a href="index.html" class="buttons">Home</a>
+        <a href="indexKanban.html" class="buttons">Kanban</a>
+        <a href="indexScrum.html" class="buttons">Scrum</a>
+        <a href="indexXP.html" class="buttons">Extreme Programming</a>
+    </aside>
+    <div class="main">
+        <aside class="barralateral"></aside>
+        <div class="contenido">
+            <div class="introTitle">
+                <h1>Extreme Programming (XP)</h1>
+            </div>
+            <br>
+            <div class="intro">
+                <h2>¿Qué es Extreme Programming?</h2>
+                <p>Extreme Programming (XP) es una metodología ágil que se centra en la calidad del código y la satisfacción del cliente, promoviendo buenas prácticas de desarrollo de software.</p>
+            </div>
+            <br>
+            <div class="principlesListTitle">
+            <h2>Principios clave de XP</h2>
+            </div>
+            <br>
+            <div class="principlesList">
+            <ul>
+                <li><strong>Simplicidad:</strong> Escribir solo el código necesario.</li>
+                <li><strong>Comunicación:</strong> Fomentar la colaboración entre desarrolladores y clientes.</li>
+                <li><strong>Retroalimentación rápida:</strong> Revisar y mejorar continuamente el código.</li>
+                <li><strong>Coraje:</strong> Enfrentar cambios y desafíos sin temor.</li>
+            </ul>
+            </div>
+            <br>
+            <div class="elementsListTitle">
+            <h2>Prácticas esenciales en XP</h2>
+            </div>
+            <br>
+            <div class="elementsList">
+            <ul>
+                <li><strong>Desarrollo en pareja:</strong> Dos programadores trabajan juntos en un mismo código para mejorar la calidad.</li>
+                <li><strong>Pruebas automatizadas:</strong> Se escriben pruebas antes del código para asegurar su correcto funcionamiento.</li>
+                <li><strong>Integración continua:</strong> Se sube código con frecuencia para evitar conflictos.</li>
+                <li><strong>Refactorización:</strong> Se mejora el código constantemente sin alterar su funcionalidad.</li>
+            </ul>
+            </div>
+            <br>
+            <div class="advantagesXPTitle">
+            <h2>Ventajas de XP</h2>
+            </div>
+            <br>
+            <div class="advantagesXP">
+            <ul>
+                <li>Asegura alta calidad del software.</li>
+                <li>Reduce errores y facilita la detección de fallos.</li>
+                <li>Mejora la colaboración entre desarrolladores.</li>
+            </ul>
+            </div>
+        </div>
+        <aside class="barralateral"></aside>
+    </div>
+</body>
+</html>
